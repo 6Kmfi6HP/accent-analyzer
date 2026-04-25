@@ -23,7 +23,19 @@ export async function analyzeAccent(audioBlob: Blob): Promise<AccentResponse> {
       method: 'POST',
       body: formData,
       headers: {
-        'Accept': '*/*',
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,th-TH;q=0.8,th;q=0.7,zh-CN;q=0.6,zh-TW;q=0.5,zh;q=0.4",
+        "cache-control": "no-cache",
+        "content-type": "multipart/form-data; boundary=----WebKitFormBoundary4M7dMBjQEJa3empT",
+        "pragma": "no-cache",
+        "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "Referer": "https://start.boldvoice.com/",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
       },
     })
 

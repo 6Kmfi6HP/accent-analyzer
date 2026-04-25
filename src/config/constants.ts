@@ -8,5 +8,5 @@ export const API_CONFIG = {
 // Audio Configuration
 export const AUDIO_CONFIG = {
   MIME_TYPE: 'audio/webm;codecs=opus',
-  FILE_NAME: 'recording.webm'
+  FILE_NAME: 'blob'
 } as const
